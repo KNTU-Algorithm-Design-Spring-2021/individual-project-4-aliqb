@@ -24,10 +24,10 @@ public class Graph {
         return (this.adjacentMatrix[source][target] > 0);
     }
 
-    public void setWeight(int source,int target,int weight){
+    private void setWeight(int source,int target,int weight){
         this.adjacentMatrix[source][target] = weight;
     }
-    public int getWeight(int source,int target){
+    private int getWeight(int source,int target){
         return this.adjacentMatrix[source][target];
     }
 
